@@ -3089,6 +3089,7 @@ describe('Mercury (1.0): Tests de Validation', () => {
   
       it('Should display the time load of the main homepage', () => {
         cy.displayTimeLoadOf()
+        cy.log('test')
       })
     })
   
