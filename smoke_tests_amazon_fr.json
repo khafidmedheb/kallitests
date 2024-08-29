@@ -1,0 +1,113 @@
+{
+    "smoke_tests": [
+      {
+        "test_case_id": 1,
+        "name": "Test de la page d'accueil",
+        "objective": "Vérifier que la page d'accueil se charge correctement.",
+        "steps": [
+          "Naviguer vers l'URL https://www.amazon.fr/",
+          "Vérifier que la page d'accueil se charge sans erreur.",
+          "Vérifier que les éléments clés (barre de recherche, menu de navigation, bannière principale) sont visibles."
+        ],
+        "expected_result": "La page d'accueil se charge correctement avec tous les éléments essentiels visibles."
+      },
+      {
+        "test_case_id": 2,
+        "name": "Test de la fonctionnalité de recherche",
+        "objective": "Vérifier que la fonctionnalité de recherche fonctionne.",
+        "steps": [
+          "Saisir un terme de recherche commun (e.g., 'iPhone') dans la barre de recherche.",
+          "Cliquer sur le bouton de recherche.",
+          "Vérifier que les résultats pertinents s'affichent."
+        ],
+        "expected_result": "Les résultats de recherche pertinents s'affichent sans erreur."
+      },
+      {
+        "test_case_id": 3,
+        "name": "Test de connexion utilisateur",
+        "objective": "Vérifier que l'utilisateur peut se connecter à son compte.",
+        "steps": [
+          "Cliquer sur 'Compte et listes' dans le coin supérieur droit.",
+          "Saisir des informations de connexion valides.",
+          "Cliquer sur 'Se connecter'.",
+          "Vérifier que l'utilisateur est redirigé vers sa page de compte."
+        ],
+        "expected_result": "L'utilisateur est connecté avec succès et redirigé vers sa page de compte."
+      },
+      {
+        "test_case_id": 4,
+        "name": "Test de l'ajout d'un produit au panier",
+        "objective": "Vérifier que l'utilisateur peut ajouter un produit au panier.",
+        "steps": [
+          "Rechercher un produit spécifique (e.g., 'Echo Dot').",
+          "Sélectionner le produit dans les résultats de recherche.",
+          "Cliquer sur 'Ajouter au panier'.",
+          "Vérifier que le produit est ajouté au panier avec succès."
+        ],
+        "expected_result": "Le produit est ajouté au panier sans erreur."
+      },
+      {
+        "test_case_id": 5,
+        "name": "Test de consultation du panier",
+        "objective": "Vérifier que l'utilisateur peut consulter les produits ajoutés au panier.",
+        "steps": [
+          "Après avoir ajouté un produit au panier, cliquer sur l'icône du panier en haut à droite.",
+          "Vérifier que la page du panier s'affiche avec le(s) produit(s) ajouté(s)."
+        ],
+        "expected_result": "La page du panier affiche correctement les produits ajoutés."
+      },
+      {
+        "test_case_id": 6,
+        "name": "Test du processus de paiement",
+        "objective": "Vérifier que le processus de paiement se lance correctement.",
+        "steps": [
+          "Avec un produit dans le panier, cliquer sur 'Passer la commande'.",
+          "Vérifier que la page de sélection des adresses de livraison s'affiche."
+        ],
+        "expected_result": "L'utilisateur est redirigé vers la page de sélection des adresses de livraison sans erreur."
+      },
+      {
+        "test_case_id": 7,
+        "name": "Test de déconnexion",
+        "objective": "Vérifier que l'utilisateur peut se déconnecter de son compte.",
+        "steps": [
+          "Une fois connecté, cliquer sur 'Compte et listes'.",
+          "Sélectionner 'Se déconnecter'.",
+          "Vérifier que l'utilisateur est déconnecté et redirigé vers la page d'accueil."
+        ],
+        "expected_result": "L'utilisateur est déconnecté avec succès et redirigé vers la page d'accueil."
+      },
+      {
+        "test_case_id": 8,
+        "name": "Test de la navigation dans les catégories",
+        "objective": "Vérifier que l'utilisateur peut naviguer dans les différentes catégories de produits.",
+        "steps": [
+          "Cliquer sur le menu 'Toutes' pour afficher les catégories.",
+          "Sélectionner une catégorie (e.g., 'Électronique').",
+          "Vérifier que la page de la catégorie sélectionnée s'affiche correctement."
+        ],
+        "expected_result": "La page de la catégorie s'affiche sans erreur avec les produits associés."
+      },
+      {
+        "test_case_id": 9,
+        "name": "Test du changement de langue",
+        "objective": "Vérifier que l'utilisateur peut changer la langue du site.",
+        "steps": [
+          "Cliquer sur l'icône de langue en bas de la page (ou dans le menu principal).",
+          "Sélectionner une autre langue disponible (e.g., English).",
+          "Vérifier que la page se recharge dans la langue sélectionnée."
+        ],
+        "expected_result": "La langue du site change et les textes s'affichent correctement dans la nouvelle langue."
+      },
+      {
+        "test_case_id": 10,
+        "name": "Test de l'affichage des promotions ou des offres",
+        "objective": "Vérifier que les promotions et offres spéciales sont affichées correctement.",
+        "steps": [
+          "Accéder à la section 'Offres' ou rechercher une promotion en cours.",
+          "Vérifier que les offres s'affichent correctement avec les réductions appliquées."
+        ],
+        "expected_result": "Les offres et promotions sont affichées correctement sans erreur d'affichage."
+      }
+    ]
+  }
