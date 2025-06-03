@@ -83,3 +83,27 @@ Pull requests and ideas are welcome! Feel free to open issues, suggest new featu
 MIT — use freely with attribution.
 
 ---
+
+
+## 📦 Repository Overview: Kallitests
+
+This repository hosts:
+
+- 🔹 **Cypress E2E Test Suites** — Clean examples and real-world test structures.
+- 🤖 **AI-Augmented Smoke Tests** — Integrating LangChain and LLMs into testing flows.
+- 🧠 **AI Agents** — Python and TypeScript agents that automate QA tasks.
+- 📜 **Scripts** — Setup tools and automation scripts for CI/CD pipelines.
+
+> Kallitests is more than a QA demo — it’s a playground to explore the future of AI-assisted quality engineering.
+
+---
+
+## 🔧 Setup Instructions
+
+A detailed `install_kallitests.sh` shell script is provided to automate the setup process (Node.js, Cypress, Python, Git, etc.).
+
+See the `README.md` in the [Kallitests repo](https://github.com/khafidmedheb/kallitests) for complete instructions.
+
+---
+
+> 🔍 This profile and project are evolving — stay tuned and ⭐️ the repo if you're interested!
