@@ -1,109 +1,82 @@
+<!-- BANNER -->
+<p align="center">
+  <img src="https://readme-hero-stats.vercel.app/api?username=khafidmedheb&title=Kallitests%20%7C%20AI-powered%20QA%20Automation&font=Source+Code+Pro&show=followers,repositories&showIcons=true&iconColor=1f6feb&bgColor=000000&textColor=ffffff&borderColor=1f6feb" alt="Kallitests Banner">
+</p>
+
 # 🧪 Kallitests — Smart QA Automation with Cypress & AI 🧠
 
-Welcome to **Kallitests**, an evolving playground for advanced **end-to-end testing**, **AI integration**, and **automation engineering**. This repository is designed to explore the intersection of modern QA practices and artificial intelligence, with real-world examples and working code.
+[![ISTQB Certified](https://img.shields.io/badge/ISTQB-Certified-blue)](https://www.istqb.org/)
+[![Open to Work](https://img.shields.io/badge/Open%20to-Full%20Remote%20Opportunities-44cc11)](#)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/khalid-hafid-medheb-40451aa8/)
+[![Email](https://img.shields.io/badge/Contact-khafid1506@gmail.com-red?logo=gmail&logoColor=white)](mailto:khafid1506@gmail.com)
 
 ---
 
 ## 🚀 What You'll Find Here
 
-This repo will include:
-
-- ✅ **Cypress Test Suites**  
-  Realistic and modular E2E testing using Cypress (JavaScript & TypeScript).
-
-- 🔁 **Smoke Tests with AI Agents**  
-  Hybrid smoke tests enhanced with intelligent decision logic powered by AI.
-
-- 🤖 **Custom AI Agents**  
-  Scripts and prototypes of agents that automate QA tasks using:
+- ✅ **Cypress Test Suites** (JavaScript & TypeScript)
+- 🔁 **Smoke Tests with AI Agents**
+- 🤖 **Custom AI Agents** powered by:
   - `LangChain` (Python & TypeScript)
-  - `OpenAI`, `Llama`, and other LLM providers
-
-- 🐍 **Python Automation Scripts**  
-  Command-line utilities and tools for test orchestration, reporting, or test data generation.
-
-- 📦 **TypeScript Utilities & Agents**  
-  Modern TypeScript agents using Node.js and AI SDKs for smart validation and automation.
+  - `OpenAI`, `Llama`, etc.
+- 🐍 **Python Scripts** for automation & reporting
+- 📦 **TypeScript CLI Agents** for test orchestration
 
 ---
 
 ## 🎯 Mission & Vision
 
-> *Build smarter, faster, and more autonomous QA systems by combining the power of Cypress with Artificial Intelligence.*
-
-This repo is a **living lab** to:
-- Explore cutting-edge testing techniques
-- Build reusable QA components
-- Integrate AI to reduce manual QA efforts
+> *Build smarter, faster, more autonomous QA systems by merging Cypress with AI agents.*
 
 ---
 
 ## 🛠️ Stack
 
-| Tool / Tech       | Purpose                                 |
-|-------------------|------------------------------------------|
-| Cypress           | E2E web testing                          |
-| Python (3.11+)    | Automation scripts, LangChain            |
-| TypeScript / Node | Smart agents, CLI tools, utilities       |
-| LangChain         | LLM-powered QA assistants (Python/TS)    |
-| GitHub Actions    | CI/CD pipeline for running all tests     |
+| Tool / Tech       | Role                                        |
+|-------------------|---------------------------------------------|
+| Cypress           | E2E Testing                                 |
+| Python            | Automation, LangChain Agents                |
+| TypeScript / Node | Smart CLI Agents                            |
+| LangChain         | LLM-powered test generation & reasoning     |
+| GitHub Actions    | CI/CD test automation pipelines             |
 
 ---
 
-## 🧠 Inspiration
+## 🧠 Current Projects
 
-> "The future QA engineer is part tester, part developer, and part AI whisperer."
+### 🧪 [Kallitests](https://github.com/khafidmedheb/kallitests)
+> A micro-agency repo for QA automation with AI.
 
-With `Kallitests`, we aim to build that future — one intelligent test at a time.
-
----
-
-## 📬 Contact & Follow Me
-
-- 🔗 [LinkedIn – Khalid Hafid Medheb](https://www.linkedin.com/in/khalid-hafid-medheb-40451aa8/)
-- 📧 Email: [khafid1506@gmail.com](mailto:khafid1506@gmail.com)
+### 🧠 [Spec2Test](https://github.com/khafidmedheb/kallitests) *(In progress)*
+> An open-source AI agent that turns specs into runnable Cypress E2E tests — from spec to CI.
 
 ---
 
-## 📂 Project Status
+## 💡 About Me
 
-🧱 Currently under **active development**. First test suites and agents will be pushed soon.  
-Stay tuned & star this repo ⭐ if you're interested in AI + QA automation!
+- ✅ **ISTQB Certified QA Engineer**
+- 💼 Open to **remote / remote-friendly** roles
+- 🧩 Bridging QA & AI through automation agents
+
+---
+
+## 📊 GitHub Stats
+
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=khafidmedheb&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khafidmedheb&layout=compact&theme=radical" alt="Top Languages" />
+</p>
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests and ideas are welcome! Feel free to open issues, suggest new features, or contribute your own test agents.
+Pull requests and feedback are welcome. Let's build the future of AI-assisted testing together 🤖.
 
 ---
 
-## 📄 License
+## 📜 License
 
-MIT — use freely with attribution.
-
----
-
-
-## 📦 Repository Overview: Kallitests
-
-This repository hosts:
-
-- 🔹 **Cypress E2E Test Suites** — Clean examples and real-world test structures.
-- 🤖 **AI-Augmented Smoke Tests** — Integrating LangChain and LLMs into testing flows.
-- 🧠 **AI Agents** — Python and TypeScript agents that automate QA tasks.
-- 📜 **Scripts** — Setup tools and automation scripts for CI/CD pipelines.
-
-> Kallitests is more than a QA demo — it’s a playground to explore the future of AI-assisted quality engineering.
+MIT — use freely with credit 🙏
 
 ---
-
-## 🔧 Setup Instructions
-
-A detailed `install_kallitests.sh` shell script is provided to automate the setup process (Node.js, Cypress, Python, Git, etc.).
-
-See the `README.md` in the [Kallitests repo](https://github.com/khafidmedheb/kallitests) for complete instructions.
-
----
-
-> 🔍 This profile and project are evolving — stay tuned and ⭐️ the repo if you're interested!
