@@ -149,6 +149,33 @@ install_homebrew() {
     fi
 }
 
+# Function to install or upgrade Yarn
+install_or_upgrade_yarn() {
+    local os="$1"
+
+    case "$os" in
+        "windows")
+            install_or_upgrade_choco_package "yarn" "Yarn"
+            ;;
+        "macos")
+            install_or_upgrade_brew_package "yarn" "Yarn"
+            ;;
+        "linux")
+            if command_exists yarn; then
+                print_info "Yarn is already installed globally, upgrading..."
+                run_command "npm update -g yarn" "Upgrading Yarn globally"
+            else
+                print_info "Installing Yarn globally with npm..."
+                run_command "npm install -g yarn" "Installing Yarn globally"
+            fi
+            ;;
+        *)
+            print_warning "OS not supported for Yarn installation"
+            ;;
+    esac
+}
+
+
 # =============================================================================
 # PACKAGE INSTALLATION/UPGRADE FUNCTIONS
 # =============================================================================
@@ -229,10 +256,11 @@ install_windows() {
         print_error "Chocolatey installation failed or not in PATH"
         return 1
     fi
-    
+
     # Install or upgrade packages via Chocolatey
     # install_or_upgrade_choco_package "git" "Git (including Git Bash)"
     install_or_upgrade_choco_package "nodejs-lts" "Node.js LTS"
+    install_or_upgrade_yarn "$os"
     install_or_upgrade_choco_package "python3" "Python 3 (latest version)"
     
     # Refresh environment variables
@@ -341,6 +369,8 @@ install_linux() {
     else
         print_warning "npm not found. Node.js installation may have failed."
     fi
+
+    install_or_upgrade_yarn "$os"
 }
 
 # Function to install packages on macOS
@@ -379,6 +409,8 @@ install_macos() {
     else
         print_warning "npm not found. Node.js installation may have failed."
     fi
+
+    install_or_upgrade_yarn "$os"
 }
 
 # =============================================================================
@@ -466,7 +498,10 @@ verify_installations() {
             print_info "Git Bash is typically available at: /c/Program Files/Git/bin/bash"
         fi
     fi
-    
+
+    # Verify Yarn
+    verify_tool "yarn" || failed_tools+=("yarn")
+
     # Summary
     if [[ ${#failed_tools[@]} -eq 0 ]]; then
         print_success "All required tools are installed and verified!"

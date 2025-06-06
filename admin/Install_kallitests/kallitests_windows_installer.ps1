@@ -99,7 +99,17 @@ function Install-Windows {
         Write-Warning "npm not found, it should have been installed with Node.js LTS"
     }
 
-    # 5) Cypress (installé via npm global)
+    # 5) yarn setup
+
+    if (!(choco list --local-only | Select-String "^yarn ")) {
+        Write-Host "Installing Yarn..." -ForegroundColor Cyan
+        choco install yarn -y
+    } else {
+        Write-Host "Upgrading Yarn..." -ForegroundColor Cyan
+        choco upgrade yarn -y
+    }
+
+    # 6) Cypress (installé via npm global)
     if (Command-Exists "cypress") {
         Write-Host "Upgrading Cypress globally..."
         Run-Command "npm install -g cypress" "Upgrading Cypress"
@@ -138,6 +148,7 @@ function Verify-Installations {
     Verify-Tool "git"
     Verify-Tool "node"
     Verify-Tool "npm"
+    Verify-Tool "yarn"
 
     if (Command-Exists "python") {
         Verify-Tool "python"
